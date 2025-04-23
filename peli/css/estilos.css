@@ -1,0 +1,113 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
+  
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #000;
+	color: #fff;
+  }
+  
+  header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px 40px;
+	background-color: #111;
+  }
+  
+  .logo {
+	color: red;
+	font-size: 40px;
+	font-weight: bold;
+  }
+  
+  nav a {
+	color: #ccc;
+	margin-left: 20px;
+	text-decoration: none;
+	font-weight: normal;
+	transition: color 0.3s;
+  }
+  
+  nav a:hover,
+  nav a.activo {
+	color: #fff;
+  }
+  
+  main {
+	position: relative;
+	height: 90vh;
+	background: url(../img/avat.jpg) no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	padding: 40px;
+  }
+  
+  .contenido {
+	max-width: 500px;
+	max-height: 500px;
+	
+  }
+  
+  .contenido h1 {
+	font-size: 48px;
+	margin-bottom: 20px;
+	
+  }
+  
+  .contenido p {
+	font-size: 16px;
+	line-height: 1.5;
+	margin-bottom: 30px;
+	
+  }
+  
+  .botones a {
+	display: inline-block;
+	margin-right: 15px;
+	padding: 10px 20px;
+	background-color: rgba(255,255,255,0.8);
+	color: #000;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 4px;
+	transition: background-color 0.3s;
+  }
+  
+  .botones a:hover {
+	background-color: #fff;
+  }
+  .recomendadas {
+	background-color: #111;
+	padding: 40px;
+	
+  }
+  
+  .recomendadas h2 {
+	color: #fff;
+	margin-bottom: 20px;
+	font-size: 24px;
+  }
+  
+  .contenedor-peliculas {
+	display: flex;
+	gap: 5px;
+	overflow-x: 10px;
+  }
+  
+  .contenedor-peliculas img {
+	width: 200px;
+	height: auto;
+	border-radius: 6px;
+	transition: transform 0.3s, box-shadow 0.3s;
+	cursor: pointer;
+  }
+  
+  .contenedor-peliculas img:hover {
+	transform: scale(1.1);
+	box-shadow: 0 10px 20px rgba(255, 255, 255, 0.3);
+  }
+  
